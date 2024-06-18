@@ -97,6 +97,7 @@ button:hover{
 }
 form{
     background-color: rgb(42, 37, 37);
+    display: inline;
 }
 @media (max-width: 840px){
     h2{
