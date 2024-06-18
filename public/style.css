@@ -1,0 +1,105 @@
+*{
+    margin :0;
+    padding:0;
+    background-color: rgb(2, 2, 39);
+}
+h1{
+    color: red;
+    text-align: center;
+    margin:20px;
+    padding:5px;
+    background-color: rgb(2, 2, 39);
+    font-size: 90px;
+}
+body{
+    background-color: rgb(2, 2, 39);
+}
+#postso{
+    min-height: 200px;
+    height:max-content;
+    width: 80%;
+    margin: 30px auto;
+    border : 2px solid white;
+    color:whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: rgb(42, 37, 37);
+}
+h2{
+    text-align: start;
+    margin:10px;
+    padding:10px;
+    background-color: rgb(42, 37, 37);
+    text-decoration: underline ;
+
+}
+p{
+    text-align: center;
+    margin:10px;
+    padding:10px;
+    background-color: rgb(42, 37, 37);
+    font-size: 25px;
+}
+.k{
+    background-color: rgb(42, 37, 37);
+    margin:10px;
+}
+.btn{
+    margin:10px;
+}
+.create{
+    display: block;
+    margin: 0px auto;
+    height: 70px;
+    width: 180px;
+    font-size: 30px ;
+}
+a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 7px;
+    background-color: rgb(42, 37, 37);
+    text-decoration: none;
+    color: wheat;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+    width: 80px;
+}
+a:hover{
+    background-color: white;
+    color:black;
+}
+button{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 7px;
+    background-color: rgb(42, 37, 37);
+    text-decoration: none;
+    color: wheat;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+    width: 100px;
+    min-height: 50px;
+    margin:10px;
+    padding:5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color:black;
+}
+form{
+    background-color: rgb(42, 37, 37);
+}
+@media (max-width: 840px){
+    h2{
+        text-align: center;
+    }
+}
