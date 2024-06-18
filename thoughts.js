@@ -53,6 +53,12 @@ app.post("/posts",(req,res)=>{
     res.redirect("/posts");
 });
 
+app.get("/posts/:id/view",(req,res)=>{
+    let {id}=req.params;
+    let post=posts.find((p)=>id === p.id);
+    res.render("ok.ejs",{post});
+});
+
 app.delete("/posts/:id", (req, res) => {
     let { id }=req.params;
     posts = posts.filter((p)=>id!==p.id);
