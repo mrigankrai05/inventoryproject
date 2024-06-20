@@ -68,13 +68,9 @@ app.delete("/posts/:id", (req, res) => {
 app.patch("/posts/:id", (req, res) => {
     let { id }=req.params;
     let post=posts.find((p)=>id === p.id);
-    if(post){
-        console.log(req.body);
-        post.content=req.body.content;
-        res.redirect("/posts");
-    }else{
-        res.send("no post found");
-    }
+    console.log(req.body);
+    post.content=req.body.content;
+    res.redirect("/posts");
 });
 app.get("/posts/:id", (req, res) => {
     let { id }=req.params;
