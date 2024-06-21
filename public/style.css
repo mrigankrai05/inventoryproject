@@ -81,6 +81,7 @@ button{
     display: inline-block;
     border: 1px solid white;
     padding: 7px;
+    height:38.5px;
     background-color: rgb(42, 37, 37);
     text-decoration: none;
     color: wheat;
@@ -88,7 +89,6 @@ button{
     transition: 0.5s;
     font-size: 15px;
     width: 100px;
-    min-height: 50px;
     margin:10px;
     padding:5px;
     text-align: center;
@@ -102,6 +102,13 @@ button:hover{
 form{
     background-color: rgb(42, 37, 37);
     display: inline;
+}
+form button{
+    font-size: 15px;
+    width: 80px;
+    margin:0px;
+    height:38.5px;
+    padding: 0px;
 }
 @media (max-width: 840px){
     h2{
