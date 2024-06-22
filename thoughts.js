@@ -16,6 +16,24 @@ const connection=mysql.createConnection({
     password:'chiragrai',
     database:'data',
 });
+
+app.get("/",(req,res)=>{
+    res.render("loginpage.ejs")
+})
+app.post("/posts/success",(req,res)=>{
+    let username=req.body.username;
+    let password=req.body.password;
+    connection.query(`SELECT * FROM thoughts WHERE username='${username}' AND id='${password}'`,(err,data)=>{
+        console.log(data);
+        if(data.length==0){
+            res.send("Invalid username or password");
+        }
+        else{
+            res.redirect("/posts");
+        }
+    })
+});
+
 app.listen(port,()=>{
     console.log('server is running on port'+ port); 
 });
