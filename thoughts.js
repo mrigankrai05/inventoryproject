@@ -53,7 +53,7 @@ app.post("/posts",(req,res)=>{
     let content=req.body.content;
     let id=uuidv4()
     let post=[ id,username,content];
-    connection.query(`INSERT INTO thoughts (id, username, content) VALUES (?,?,?)`,post,(err,result)=>{
+    connection.query(`INSERT INTO thoughts VALUES (?,?,?)`,post,(err,result)=>{
         res.redirect("/posts");
     });
 });
